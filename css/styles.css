@@ -927,7 +927,221 @@ h3 {
     top: 1rem;
     right: 1rem;
   }
+   .card {
+    padding: 2rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  /* 1. FINDINGS PAGE - Hypothesis Testing Results Table */
+  #findings .info-table {
+    font-size: 0.75rem;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #findings .info-table thead {
+    display: none; /* Hide headers on mobile for better readability */
+  }
+
+  #findings .info-table tbody {
+    display: block;
+  }
+
+  #findings .info-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    background: white;
+  }
+
+  #findings .info-table td {
+    display: block;
+    text-align: left;
+    padding: 0.5rem 0;
+    border: none;
+    position: relative;
+    padding-left: 45%;
+  }
+
+  #findings .info-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 40%;
+    font-weight: 600;
+    color: #667eea;
+  }
+
+  /* 2. POSTER PAGE - Logo fixes */
+  .poster-logos {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logo-placeholder {
+    max-width: 60%;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .logo-placeholder img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .poster-header {
+    padding: 1.5rem;
+    margin: -2rem -1.5rem 1.5rem -1.5rem;
+  }
+
+  /* 3. GLOBAL MOBILE IMPROVEMENTS */
+  
+  /* Research Questions Cards */
+  .rq-card {
+    padding: 1.5rem;
+  }
+
+  .rq-badge {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  /* Key Findings Cards */
+  .kf-card {
+    padding: 1.5rem;
+  }
+
+  .kf-card::before {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .kf-card p {
+    padding-right: 2rem;
+    font-size: 0.9rem;
+  }
+
+  /* Future Cards */
+  .future-card {
+    padding: 1.5rem;
+  }
+
+  .future-card h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Stakeholder Cards */
+  .stakeholder-card {
+    padding: 1.5rem;
+  }
+
+  .stakeholder-card h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Limitations Grid */
+  .limitations-grid {
+    gap: 1rem;
+  }
+
+  .limitation-card {
+    padding: 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* Significance Cards */
+  .significance-card {
+    padding: 1.5rem;
+  }
+
+  .significance-icon {
+    font-size: 2rem;
+  }
+
+  .significance-card h4 {
+    font-size: 1.1rem;
+  }
+
+  /* Tables - general mobile fix */
+  .info-table {
+    font-size: 0.85rem;
+  }
+
+  .info-table th,
+  .info-table td {
+    padding: 0.75rem;
+  }
+
+  /* Abstract section */
+  .abstract {
+    padding: 1.5rem;
+  }
+
+  /* Problem Statement */
+  .problem-context,
+  .problem-focus {
+    padding: 1.5rem;
+  }
+
+  /* Approach containers */
+  .approach-main,
+  .frameworks-highlight,
+  .model-intro-container {
+    padding: 1.5rem;
+  }
+
+  /* Implications */
+  .implications-container {
+    padding: 1.5rem;
+  }
+
+  /* Path Forward */
+  .path-forward-container {
+    padding: 2rem 1.5rem;
+  }
+
+  /* Reduce poster section padding */
+  .poster-section-content {
+    padding: 1rem;
+  }
+
+  .poster-image-placeholder {
+    padding: 2rem 1rem;
+    min-height: 200px;
+  }
+
+  /* Flow boxes */
+  .flow-box {
+    padding: 1.2rem;
+  }
+
+  .flow-box h3 {
+    font-size: 1rem;
+  }
+
+  .flow-box p {
+    font-size: 0.85rem;
+  }
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
